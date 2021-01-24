@@ -1,0 +1,67 @@
+:root {
+  --main-color-accent: rgb(40, 187, 191);
+  --main-color-btn: rgb(50, 205, 50);
+  --main-color-bg: rgb(231, 231, 231);
+  --main-color-white: rgb(255, 255, 255);
+  --main-color-black: rgb(0, 0, 0);
+
+  --main-radius: 3px;
+  --padding-tb: 8px 0;
+  --padding-lr: 0 12px;
+  --main-margin: 4px 10px;
+
+  --main-font-size: 4.5rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: var(--main-color-bg);
+
+  h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  a {
+    color: inherit;
+    margin-right: 1.5rem;
+  }
+}
+
+.btn {
+  padding: 4px 8px;
+  color: var(--main-color-bg);
+  background-color: var(--main-color-accent);
+  border: 2px solid var(--main-color-accent);
+  border-radius: var(--main-radius);
+}
+
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

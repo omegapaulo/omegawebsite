@@ -1,0 +1,21 @@
+{
+  "name": "omegawebsite",
+  "version": "0.0.1",
+  "description": "A portfolio website to expose my creativity and skills as a web developer.",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel src/index.html --watch",
+    "build": "build src/index.html"
+  },
+  "keywords": [
+    "typescript",
+    "scss"
+  ],
+  "author": "Paulo Omega",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.1.3"
+  }
+}

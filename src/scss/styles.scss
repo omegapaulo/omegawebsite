@@ -1,0 +1,95 @@
+// body {
+//   font-family: 'Montserrat', sans-serif;
+//   font-family: 'Poppins', sans-serif;
+// }
+
+@import 'config';
+
+body {
+  color: white;
+
+  .header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 4px 42px;
+    @extend .df;
+    justify-content: space-between;
+    height: 7rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+
+    img {
+      width: 3.5rem;
+    }
+
+    figure {
+      @extend .df;
+      flex-direction: column;
+
+      figcaption {
+        font-weight: bold;
+      }
+    }
+
+    nav {
+      font-size: 1.5rem;
+    }
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 100vh;
+    color: var(--main-color-black);
+    position: relative;
+
+    .content {
+      grid-column: 3/6;
+      height: 100%;
+      // position: absolute;
+      // top: 15rem;
+      @extend .df;
+      flex-direction: column;
+
+      h2 {
+        font-size: var(--main-font-size);
+        font-family: 'Poppins', sans-serif;
+        align-self: flex-start;
+      }
+
+      h2:first-child {
+        font-size: 2rem;
+      }
+
+      .content__parag {
+        align-self: flex-start;
+
+        p {
+          font-size: 3.5rem;
+          font-family: 'Montserrat', sans-serif;
+          margin: 2.5rem 0;
+        }
+        margin-bottom: 12rem;
+      }
+
+      .btn__main {
+        font-size: 2rem;
+        padding: 1.2rem 2.2rem;
+        background-color: var(--main-color-bg);
+        color: var(--main-color-accent);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+
+    .picture {
+      grid-column: 6/8;
+      @extend .df;
+      height: 100%;
+      margin-top: 3rem;
+    }
+  }
+}
