@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "jest",
-    "start": "parcel src/index.html --watch",
+    "start": "parcel src/index.html",
     "build": "build src/index.html"
   },
   "keywords": [
